@@ -1,0 +1,24 @@
+fungsi insertArray(values[],posisi,newValue,arrSIze)
+    tempValues[arrSize]
+    tempValues = values
+    values = []
+    values[arrSize+1]
+    for i=0,i<arrSize,i++
+        values[i]=tempValues[i]
+    for i=arrSize,i>posisi,i--
+        values
+    values[posisi]=newValue
+    return values
+end fungsi
+
+values = {1,8,11,3,6}
+arrSize = 5
+posisi = 1
+newValue = 7
+
+// algoritma menghapus data
+
+fungsi hapusArray(values,arrSize,posisi)
+    for i = posisi,i < arrSize-1, i++
+        values[i] = values[i+1]
+    
