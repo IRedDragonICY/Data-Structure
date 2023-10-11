@@ -1,0 +1,91 @@
+Provinsi          : PROVINSI KALIMANTAN TENGAH
+Kota/Kabupaten    : KABUPATEN KOTAWARINGIN BARAT
+NIK               : 6201052907040001
+Nama              : RENDIE ABDI SAPUTRA
+Tempat/Tgl Lahir  : PANGKALAN BUN, 29-07-2004
+Jenis Kelamin     : LAKI-LAKI
+Gol.Darah         : B
+Alamat            : JL. A. YANI
+         RT/RW    : 006/003
+        Kel/Desa  : SUMBER AGUNG
+       Kecamatan  : PANGKALAN LADA
+Agama             : ISLAM
+Status Perkawinan : BELUM KAWIN
+Pekerjaan         : PELAJAR/MAHASISWA
+Kewarganegaraan   : WNI
+Berlaku Hingga    : SEUMUR HIDUP
+Dibuat            : 02-08-2021
+========================================================
+Provinsi          : PROVINSI BANTEN
+Kota/Kabupaten    : KOTA TANGERANG SELATAN
+NIK               : 3674072703040003
+Nama              : MOHAMMAD FARID HENDIANTO
+Tempat/Tgl Lahir  : TANGERANG, 27-03-2004
+Jenis Kelamin     : LAKI-LAKI
+Gol.Darah         : B
+Alamat            : BATAN INDAH BLOK J-14
+       RT/RW      : 003/004
+       Kel/Desa   : KADEMANGAN
+       Kecamatan  : SETU
+Agama             : Islam
+Status Perkawinan : Belum Kawin
+Pekerjaan         : PELAJAR/MAHASISWA
+Kewarganegaraan   : WNI
+Berlaku Hingga    : SEUMUR HIDUP
+Dibuat            : 27-05-2021
+========================================================
+Provinsi          : PROVINSI DAERAH ISTIMEWA YOGYTAKARTA
+Kota/Kabupaten    : KOTA YOGYAKARTA
+NIK               : 3471135407040001
+Nama              : AISYAH SYAFI'I NURJANNAH
+Tempat/Tgl Lahir  : YOGYAKARTA, 14-07-2004
+Jenis Kelamin     : PEREMPUAN
+Gol.Darah         : B
+Alamat            : GLAGAH UH 4/67
+       RT/RW      : 012/003
+       Kel/Desa   : WARUNGBOTO
+       Kecamatan  : UMBULHARJO
+Agama             : ISLAM
+Status Perkawinan : BELUM KAWIN
+Pekerjaan         : PELAJAR/MAHASISWA
+Kewarganegaraan   : WNI
+Berlaku Hingga    : SEUMUR HIDUP
+Dibuat            : 24-06-2021
+========================================================
+Provinsi          : PROVINSI DAERAH ISTIMEWA YOGYTAKARTA
+Kota/Kabupaten    : KOTA YOGYAKARTA
+NIK               : 3203012503770011
+Nama              : GUOHUI CHEN
+Tempat/Tgl Lahir  : FUJIAN, 25-03-1977
+Jenis Kelamin     : LAKI-LAKI
+Gol.Darah         : A
+Alamat            : JL. SELAMET PERUMAHAN RANCABALI NO.40
+       RT/RW      : 002/004
+       Kel/Desa   : MUKA
+       Kecamatan  : CIANJUR
+Agama             : KRISTEN
+Status Perkawinan : KAWIN
+Pekerjaan         : OTHERS
+Kewarganegaraan   : WNI
+Berlaku Hingga    : SEUMUR HIDUP
+Dibuat            : 11-10-2023
+========================================================
+
+Provinsi          : PROVINSI DKI JAKARTA
+Kota              : JAKARTA BARAT
+NIK               : 3171234567890123
+Nama              : MIRA SETIAWAN
+Tempat/Tgl Lahir  : JAKARTA, 18-02-1986
+Jenis Kelamin     : PEREMPUAN
+Gol.Darah         : B
+Alamat            : JL. PASTI CEPAT A7/66
+       RT/RW      : 007/008
+       Kel/Desa   : PEGADUNGAN
+       Kecamatan  : KALIDERES
+Agama             : ISLAM
+Status Perkawinan : KAWIN
+Pekerjaan         : PEGAWAI SWASTA
+Kewarganegaraan   : WNI
+Berlaku Hingga    : SEUMUR HIDUP
+Dibuat            : 11-10-2023
+========================================================

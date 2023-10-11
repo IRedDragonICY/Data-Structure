@@ -1,0 +1,59 @@
+fungsi createNode(data):
+    return { 'data': data, 'next': none}
+fungsi insertatHead(linkedList, data):
+    newNode = createNode(data)
+    newNode['next'] = linkedList
+    return newNode
+linkedlist =  none
+linkedlist = insertatHead(linkedlist, 7)
+linkedlist = insertatHead(linkedlist, 11)
+linkedList = insertatHead(linkedList, 2)
+
+  Cetak linkedlist
+1 fungsi print linkedlist(linkedList):
+2   while linkedList:
+3       print(linkedList['data'])
+4       linkedList = linkedList['next']
+
+fungsi cariNode(linkedList, target):
+    while linkedList:
+        if linkedList['data'] == target:
+            return linkedList
+        linkedList = linkedList['next']
+    return none
+
+
+Eksekusi:
+7 linkedlist =  none
+8 insertatHead(linkedlist, 7)
+3 fungsi insertatHead(Node, 7)
+4   newNode = createNode(7)
+1 fungsi createNode(7)
+2   return { 'data': 7, 'next': none}
+5   newNode['next'] = none
+6   return { 'data': 7, 'next': none}
+9 linkedlist = insertatHead({ 'data': 7, 'next': none}, 11)
+3 fingsi insertatHead({ 'data': 7, 'next': none}, 11)
+4   newNode = createNode(11)
+1 fungsi createNode(11)
+2   return { 'data': 11, 'next': none}
+5   newNode['next'] = {'data: 11, 'next':{ 'data': 7, 'next': none}}
+6   return { 'data': 11, 'next': {'data: 7, 'next': none}}
+
+
+linkedlist ={2,{11,{7,none}}}
+1 fungsi print linkedlist({2,{11,{7,none}}})
+2   while {2,{11,{7,none}}}:                               T
+3       print(2)
+4       linkedlist = {11,{7,none}}
+2   while {11,{7,none}}:                                   T
+3       print(11)
+4       linkedlist = {7,none}
+2   while {7,none}:                                        T
+3       print(7)
+4       linkedlist = none
+2   while none:                                            F
+
+
+
+
