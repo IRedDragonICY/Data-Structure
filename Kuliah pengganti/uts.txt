@@ -1,0 +1,1 @@
+buatlah i dari 1 sampai 6. x^2. Buatlah dalam bentuk linked list

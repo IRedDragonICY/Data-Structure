@@ -1,0 +1,28 @@
+fungsi insertAfterKey(LL,newnode,key):
+    tempLL = LL
+    while tempLL:
+        if tempLL['data'] == key:
+            newnode['next'] = tempLL['next']
+            tempLL['next'] = newnode
+            return LL
+        tempLL = tempLL['next']
+LL = {2,{11,{7,{5,none}}}}
+newnode = {27,none}
+key = 7
+EKSEKUSI:
+2 tempLL = {2,{11,{7,{5,none}}}}
+3 while {2,{11,{7,{5,none}}}}:                         #True
+4     if 2 == 7:                                       #False
+5     tempLL = {11,{7,{5,none}}}
+3 while {11,{7,{5,none}}}:                             #True
+4     if 11 == 7:                                      #False
+5     tempLL = {7,{5,none}}
+3 while {7,{5,none}}:                                  #True
+4     if 7 == 7:                                       #True
+5        newnode['next'] = {5,none}
+         {27,{5,none}}
+6        tempLL['next'] = {27,{5,none}}
+         {7,{27,{5,none}}}
+7        return {2,{11,{7,{27,{5,none}}}}}
+           
+

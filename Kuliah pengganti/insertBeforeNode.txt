@@ -1,0 +1,20 @@
+insertBeforeNode(LL,key)
+    tempLL = LL
+    newNode = {'data':6,'next':None}
+    while tempLL is not None AND tempLL['next'] is not None:
+        if tempLL['next']['data'] == key:
+            newNode['next'] = tempLL['next']
+            tempLL['next'] = newNode
+            return LL
+        tempLL = tempLL['next']
+
+EKSEKUSI
+LL = {2,{7,{11,none}}}, key = 7
+1 fungsi insertBeforeNode({2,{7,{11,none}}},7)
+2   tempLL = {2,{7,{11,none}}}
+3   newNode = {6,none}
+4   while {2,{7,{11,none}}} is not None AND {7,{11,none}} is not None:           T AND T = T
+5       if 7 == 7:                                                               T
+6           newNode['next'] = {7,{11,none}}
+7           tempLL['next'] = {6,{7,{11,none}}}
+8           return {2,{6,{7,{11,none}}}}

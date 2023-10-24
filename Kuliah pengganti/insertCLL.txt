@@ -1,0 +1,33 @@
+fungsi insertCLL(LL, data):
+    newnode = createNode(data)
+    if not LL:
+        newNode['next'] = newNode
+        return newNode
+    else:
+        tempLL = LL
+        while tempLL['next'] != LL:
+            tempLL = tempLL['next']
+        tempLL['next'] = newNode
+        newNode['next'] = LL
+        return LL
+EKSEKUSI
+LL = None
+LL = insertCLL(LL, 3)
+
+fungsi insertCLL(none, 3):
+    newnode = {3, none}
+    if not none:               T
+        newNode[next']={3,none}     
+        return {3,{...}}
+
+EKSEKUSI
+LL = {3,{...}}
+1. fungsi CLL({3,{...}},7)
+2.      newnode = {7,none}
+3.      if not {3,{...}}:               F
+6.      else:
+7.          tempLL = {3,{...}}
+8.          while {...} != {3,{...}}:            F
+10.         tempL['next'] = {7,none}            # {3,{7,none}}
+11.         newNode['next'] = {3,{7,none}}      # tempLL = {3,{7,none}}
+                                                # = {3,{7,{...}}}

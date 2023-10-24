@@ -1,0 +1,36 @@
+fungsi dolbyLL(LL, data)
+    newNode = {'data':data,'next':none,'back':none}
+    if LL is none:
+        return newNode
+    newNode['next]=LL
+    LL['back']=newNode
+    return newNode
+
+EKSEKUSI
+data : 100
+LL   : none
+1 fungsi dolbyLL(none, 100)
+2 newNode = {100,none,none}
+3 if none  is none:                                        True
+4 return {100,none,none}
+EKSEKUSI lanjut
+data : 52
+LL   : {100,none,none}
+1 fungsi dolbyLL({100,none,none}, 52)
+2 newNode = {52,none,none}
+3 if {100,none,none}  is none:                             False
+5 newNode['next'] = {100,none,none}                        {52,{100,none,none},none}
+6 {100,none,none}['back'] = {52,{100,none,none},none}      {100,{52,{100,none,none},none},none}
+7 return {52,{100,none,none},none}
+EKSEKUSI
+newdata : 5
+LL = {7,none,none}
+1 fungsi dolbyLL({7,none,none}, 5)
+2 newNode = {5,none,none}                            -> {5,none,{7,none,none}}
+3 if {7,none,none}  is none:                             False
+ LL['back] = none
+ LL['back] = {5,none,{7,none,none}}
+                   data,back,next
+ newNode = {5,none,{7,{...},none}}
+          data,back,next
+

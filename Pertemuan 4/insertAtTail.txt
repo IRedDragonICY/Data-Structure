@@ -1,0 +1,21 @@
+fungsi insertAtTail (linkedlist,newnode):
+    tempLL = linkedlist
+    while tempLL['next'] is not done:
+        tempLL = tempLL['next]
+    tempLL['next'] = newnode
+    return linkedlist
+newnode={'data':25,'next':None}
+linkedlist = {2,{11,{7,{5,none}}}}
+
+eksekusi:
+insertAtTail({2,{11,{7,{5,none}}}}, {25,none})
+    tempLL = {2,{11,{7,{5,none}}}}
+    while {11,{7,{5,none}}} is not done:           True
+        tempLL = {11,{7,{5,none}}}            {11,{7,{5,none}}}
+    while {7,{5,none}} is not done:            True
+        tempLL = {7,{5,none}}             {7,{5,none}}
+    while {5,none} is not done:             True
+        tempLL = {5,none}                  {5,none}
+    while none is not done:                 False
+    tempLL[5,none] = {25,none}
+    return {2,{11,{7,{5,{25,none}}}}}

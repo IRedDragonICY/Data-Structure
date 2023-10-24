@@ -1,0 +1,17 @@
+fungsi delNodebyKeySearch(linkedlist,key)
+    tempLL = linkedlist
+    while tempLL['next']:
+        if tempLL['next']['data'] == key:
+            tempLL['next'] = tempLL['next']['next']
+            return linkedlist
+        tempLL = tempLL['next']
+linkedlist = {2,{11,{7,{5,None}}}}
+
+EKSEKUSI:
+1 delNodebyKeySearch{2,{11,{7,{5,None}}},11}
+2 tempLL = {2,{11,{7,{5,None}}}}
+3 while {11,{7,{5,None}}}:
+4     if 11 == 11:
+5     tempLL['next'] = {7,{5,None}}
+6     return {2,{7,{5,None}}}
+

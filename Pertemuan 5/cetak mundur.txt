@@ -1,0 +1,19 @@
+fungsi cetakMundur(LL)
+    tempLL = LL
+    while tempLL['next'] is not None:
+        tempLL = tempLL['next']
+    while tempLL is not None:
+        print(tempLL['data'])
+        tempLL = tempLL['back']
+EKSEKUSI
+1 fungsi cetakMundur({5,none,{7,{...},none}})
+2   tempLL = {5,none,{7,{...},none}}
+3   while {7,{...},none} is not none:                 True
+4       tempLL = {7,{...},none}                        tempLL = {7,{...},none}
+5   while {7,{...},none} is not none:                 True
+6       cetak(7)
+7       tempLL = {5,none,{...}}                       tempLL = {5,none,{...}}
+5   while {5,none,{...}} is not none:                 True
+6       cetak(5)
+7       tempLL = none                                 tempLL = none
+5   while none is not none:                           False
