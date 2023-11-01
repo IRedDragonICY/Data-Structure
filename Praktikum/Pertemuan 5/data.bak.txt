@@ -1,0 +1,182 @@
+Provinsi          : PROVINSI KALIMANTAN TENGAH
+Kota/Kabupaten    : KABUPATEN KOTAWARINGIN BARAT
+NIK               : 3674072703040003
+Nama              : MOHAMMAD FARID HENDIANTO
+Tempat/Tgl Lahir  : TANGERANG, 27-03-2004
+Jenis Kelamin     : LAKI-LAKI
+Gol.Darah         : B
+Alamat            : BATAN INDAH BLOK J-14
+       RT/RW      : 003/004
+       Kel/Desa   : KADEMANGAN
+       Kecamatan  : SETU
+Agama             : Islam
+Status Perkawinan : Belum Kawin
+Pekerjaan         : PELAJAR/MAHASISWA
+Kewarganegaraan   : WNI
+Berlaku Hingga    : SEUMUR HIDUP
+Dibuat            : 27-05-2021
+========================================================
+Provinsi          : PROVINSI DAERAH ISTIMEWA YOGYTAKARTA
+Kota/Kabupaten    : KOTA YOGYAKARTA
+NIK               : 3471135407040001
+Nama              : AISYAH SYAFI'I NURJANNAH
+Tempat/Tgl Lahir  : YOGYAKARTA, 14-07-2004
+Jenis Kelamin     : PEREMPUAN
+Gol.Darah         : B
+Alamat            : GLAGAH UH 4/67
+       RT/RW      : 012/003
+       Kel/Desa   : WARUNGBOTO
+       Kecamatan  : UMBULHARJO
+Agama             : ISLAM
+Status Perkawinan : BELUM KAWIN
+Pekerjaan         : PELAJAR/MAHASISWA
+Kewarganegaraan   : WNI
+Berlaku Hingga    : SEUMUR HIDUP
+Dibuat            : 24-06-2021
+========================================================
+Provinsi          : PROVINSI DAERAH ISTIMEWA YOGYTAKARTA
+Kota/Kabupaten    : KOTA YOGYAKARTA
+NIK               : 3203012503770011
+Nama              : GUOHUI CHEN
+Tempat/Tgl Lahir  : FUJIAN, 25-03-1977
+Jenis Kelamin     : LAKI-LAKI
+Gol.Darah         : A
+Alamat            : JL. SELAMET PERUMAHAN RANCABALI NO.40
+       RT/RW      : 002/004
+       Kel/Desa   : MUKA
+       Kecamatan  : CIANJUR
+Agama             : KRISTEN
+Status Perkawinan : KAWIN
+Pekerjaan         : OTHERS
+Kewarganegaraan   : WNI
+Berlaku Hingga    : SEUMUR HIDUP
+Dibuat            : 11-10-2023
+========================================================
+Provinsi          : PROVINSI DKI JAKARTA
+Kota/Kabupaten    : JAKARTA BARAT
+NIK               : 3171234567890123
+Nama              : MIRA SETIAWAN
+Tempat/Tgl Lahir  : JAKARTA, 18-02-1986
+Jenis Kelamin     : PEREMPUAN
+Gol.Darah         : B
+Alamat            : JL. PASTI CEPAT A7/66
+       RT/RW      : 007/008
+       Kel/Desa   : PEGADUNGAN
+       Kecamatan  : KALIDERES
+Agama             : ISLAM
+Status Perkawinan : KAWIN
+Pekerjaan         : PEGAWAI SWASTA
+Kewarganegaraan   : WNI
+Berlaku Hingga    : SEUMUR HIDUP
+Dibuat            : 11-10-2023
+========================================================
+Provinsi          : PROVINSI BALI
+Kota/Kabupaten    : KOTA DENPASAR
+NIK               : 5171010905900006
+Nama              : AGUNG NIZAR SANTOSO
+Tempat/Tgl Lahir  : BANDUNG, 09-05-1990
+Jenis Kelamin     : LAKI-LAKI
+Gol.Darah         : AB
+Alamat            : JL. KERTA DALEM SARI IV NO 19, SEKAR KANCIN
+       RT/RW      : 000/000
+       Kel/Desa   : SIDAKARYA
+       Kecamatan  : DENPASAR SELATAN
+Agama             : ISLAM
+Status Perkawinan : BELUM KAWIN
+Pekerjaan         : PEGAWAI SWASTA
+Kewarganegaraan   : WNI
+Berlaku Hingga    : SEUMUR HIDUP
+Dibuat            : 17-10-2023
+========================================================
+Provinsi          : PROVINSI LAMPUNG
+Kota/Kabupaten    : KABUPATEN PESAWARAN
+NIK               : 1809015306970005
+Nama              : VINA AMELIA
+Tempat/Tgl Lahir  : KESUGIHAN, 13-05-1997
+Jenis Kelamin     : PEREMPUAN
+Gol.Darah         : B
+Alamat            : KESUGIHAN KARANGANYAR
+       RT/RW      : 001/001
+       Kel/Desa   : KARANG ANYAR
+       Kecamatan  : GEDONG TATAH
+Agama             : ISLAM
+Status Perkawinan : BELUM KAWIN
+Pekerjaan         : TIDAK BEKERJA
+Kewarganegaraan   : WNI
+Berlaku Hingga    : SEUMUR HIDUP
+Dibuat            : 17-10-2023
+========================================================
+Provinsi          : PROVINSI BALI
+Kota/Kabupaten    : KABUPATEN BADUNG
+NIK               : 5103051801800001
+Nama              : KIRILL ANOTONOV
+Tempat/Tgl Lahir  : USSR, 18-01-1980
+Jenis Kelamin     : LAKI-LAKI
+Gol.Darah         : A
+Alamat            : PERUMAHAN PANDAWA GARDEN
+       RT/RW      : 000/000
+       Kel/Desa   : KUTUH
+       Kecamatan  : KUTA SELATAN
+Agama             : ISLAM
+Status Perkawinan : KAWIN
+Pekerjaan         : OTHERS
+Kewarganegaraan   : WNI
+Berlaku Hingga    : SEUMUR HIDUP
+Dibuat            : 17-10-2023
+========================================================
+Provinsi          : PROVINSI JAWA TENGAH
+Kota/Kabupaten    : KABUPATEN PEKALONGAN
+NIK               : 3329091003780012
+Nama              : AMAAT FAOZI
+Tempat/Tgl Lahir  : PEKALONGAN, 10-03-1978
+Jenis Kelamin     : LAKI-LAKI
+Gol.Darah         : A
+Alamat            : DUSUN KAUMAN
+       RT/RW      : 002/005
+       Kel/Desa   : KESESI
+       Kecamatan  : KESESI
+Agama             : ISLAM
+Status Perkawinan : KAWIN
+Pekerjaan         : Pedagang
+Kewarganegaraan   : WNI
+Berlaku Hingga    : SEUMUR HIDUP
+Dibuat            : 17-10-2023
+========================================================
+Provinsi          : PROVINSI JAWA TENGAH
+Kota/Kabupaten    : KABUPATEN KUDUS
+NIK               : 3319042612640001
+Nama              : BUDI SANTOSO
+Tempat/Tgl Lahir  : KUDUS, 29-12-1984
+Jenis Kelamin     : LAKI-LAKI
+Gol.Darah         : B
+Alamat            : LARIREJO
+       RT/RW      : 002/001
+       Kel/Desa   : LARIREJO
+       Kecamatan  : UNDAAN
+Agama             : ISLAM
+Status Perkawinan : BELUM KAWIN
+Pekerjaan         : PETANI/PEKEBUN
+Kewarganegaraan   : WNI
+Berlaku Hingga    : SEUMUR HIDUP
+Dibuat            : 17-10-2023
+========================================================
+Provinsi          : PROVINSI JAWA TENGAH
+Kota/Kabupaten    : KOTA SURAKARTA
+NIK               : 3372011210770001
+Nama              : SELAMAT IDUL ADHA
+Tempat/Tgl Lahir  : SURAKARTA, 12-10-1977
+Jenis Kelamin     : LAKI-LAKI
+Gol.Darah         : AB
+Alamat            : BARON CILIK
+       RT/RW      : 004/005
+       Kel/Desa   : BUMI
+       Kecamatan  : LAWEYAN
+Agama             : ISLAM
+Status Perkawinan : KAWIN
+Pekerjaan         : PERDAGANGAN
+Kewarganegaraan   : WNI
+Berlaku Hingga    : SEUMUR HIDUP
+Dibuat            : 17-10-2023
+========================================================
+Provinsi          : PROVINSI SULAWESI SELATAN
+Kota/Kabupaten    : KABUPATEN SOPPENG
