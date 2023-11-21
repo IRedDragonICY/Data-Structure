@@ -1,5 +1,23 @@
 Provinsi          : PROVINSI KALIMANTAN TENGAH
 Kota/Kabupaten    : KABUPATEN KOTAWARINGIN BARAT
+NIK               : 3674072703040003
+Nama              : MOHAMMAD FARID HENDIANTO
+Tempat/Tgl Lahir  : TANGERANG, 27-03-2004
+Jenis Kelamin     : LAKI-LAKI
+Gol.Darah         : B
+Alamat            : BATAN INDAH BLOK J-14
+       RT/RW      : 003/004
+       Kel/Desa   : KADEMANGAN
+       Kecamatan  : SETU
+Agama             : Islam
+Status Perkawinan : Belum Kawin
+Pekerjaan         : PELAJAR/MAHASISWA
+Kewarganegaraan   : WNI
+Berlaku Hingga    : SEUMUR HIDUP
+Dibuat            : 27-05-2021
+========================================================
+Provinsi          : PROVINSI KALIMANTAN TENGAH
+Kota/Kabupaten    : KABUPATEN KOTAWARINGIN BARAT
 NIK               : 3471135407040001
 Nama              : AISYAH SYAFI'I NURJANNAH
 Tempat/Tgl Lahir  : YOGYAKARTA, 14-07-2004
