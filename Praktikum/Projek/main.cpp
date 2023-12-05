@@ -103,9 +103,111 @@ void PengembalianMobil::tambahKerusakan(string jenis, double harga) {
 struct Node {
     PengembalianMobil mobil;
     Node* next;
+    Node* prev;
+    int prioritas;
 
-    Node() : mobil(), next(NULL) {}
+    Node(PengembalianMobil mobil, int prioritas) : mobil(mobil), prioritas(prioritas), next(NULL), prev(NULL) {}
+    Node() : mobil(), prioritas(0), next(NULL), prev(NULL) {}
 };
+
+class doublyPriorityQueue {
+public:
+    Node* head;
+    Node* tail;
+
+    doublyPriorityQueue() : head(NULL), tail(NULL) {}
+    
+    ~doublyPriorityQueue() {
+        Node* current = head;
+        while (current != NULL) {
+            Node* next = current->next;
+            delete current;
+            current = next;
+        }
+    }
+
+    void enqueue(PengembalianMobil data, int prioritas){
+        Node* newNode = new Node(data, prioritas);
+
+        if (head == NULL) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            Node* current = head;
+            while (current != NULL && current->prioritas > prioritas) {
+                current = current->next;
+            }
+
+            if (current == NULL) {
+                tail->next = newNode;
+                newNode->prev = tail;
+                tail = newNode;
+            } else if (current == head) {
+                newNode->next = head;
+                head->prev = newNode;
+                head = newNode;
+            } else {
+                newNode->next = current;
+                newNode->prev = current->prev;
+                current->prev->next = newNode;
+                current->prev = newNode;
+            }
+        }
+    }
+    
+    void dequeue(){
+        if (head == NULL) {
+            cout << "Antrian kosong. Tidak ada pengembalian mobil untuk dikeluarkan." << endl;
+            return;
+        }
+
+        if (head == tail) {
+            delete head;
+            head = tail = NULL;
+        } else {
+            Node* temp = head;
+            head = head->next;
+            head->prev = NULL;
+            delete temp;
+        }
+
+        cout << "Pengembalian mobil berhasil dikeluarkan dari antrian." << endl;
+    }
+    
+    void peek(){
+        if (head == NULL) {
+            cout << "Antrian kosong." << endl;
+            return;
+        }
+
+        cout << "Isi Antrian:" << endl;
+        cout << "  ";
+        head->mobil.tampilkanInfoPengembalian();
+    }
+
+    void tampilkanIsi(){
+        if (head == NULL) {
+            cout << "Antrian kosong." << endl;
+            return;
+        }
+
+        Node* current = head;
+        int index = 1;
+
+        cout << "Isi Antrian:" << endl;
+        while (current != NULL) {
+            cout << "  " << index << ". ";
+            current->mobil.tampilkanInfoPengembalian();
+            current = current->next;
+            index++;
+        }
+
+        cout << "Jumlah data dalam antrian: " << index - 1 << endl;
+    }
+};
+
+
+
 
 class Stack {
 public:
@@ -252,7 +354,7 @@ void Queue::tampilkanIsi() {
 int main() {
     Stack stack;
     Queue antrian;
-
+    doublyPriorityQueue antrianPrioritas;
     int jumlahMobilDipinjam, jumlahMobilDikembalikan;
     double totalHargaSewa;
 
@@ -351,6 +453,8 @@ int main() {
             tail = newNode;
         }
 
+    
+
         system("clear");
         cout << "=============================" << endl;
         cout << "Informasi Pengembalian Mobil ke-" << i + 1 << endl;
@@ -358,8 +462,18 @@ int main() {
         tail->mobil.tampilkanInfoPengembalian();
     }
 
-    system("clear");
+    // coba mencetak semua data yang ada di linked list
+    Node* current = head;
+    // while (current != NULL) {
+    //     cout << "=============================" << endl;
+    //     cout << "Informasi Pengembalian Mobil" << endl;
+    //     cout << "=============================" << endl;
+    //     current->mobil.tampilkanInfoPengembalian();
+    //     current = current->next;
+    // }
 
+    system("clear");
+    bool isWithPriority = false;
     int menuPilihan;
     do {
         cout << "\nMenu:\n";
@@ -367,9 +481,11 @@ int main() {
         cout << "2. Pop dari Stack\n";
         cout << "3. Enqueue ke Antrian\n";
         cout << "4. Dequeue dari Antrian\n";
-        cout << "5. Lihat Isi Stack\n";
-        cout << "6. Lihat Isi Antrian\n";
-        cout << "7. Keluar\n";
+        cout << "5. Enqueue ke Antrian dengan prioritas\n";
+        cout << "6. Dequeue dari Antrian dengan prioritas\n";
+        cout << "7. Lihat Isi Stack\n";
+        cout << "8. Lihat Isi Antrian\n";
+        cout << "9. Keluar\n";
         cout << "Masukkan pilihan Anda: ";
         cin >> menuPilihan;
 
@@ -404,14 +520,37 @@ int main() {
                 // Dequeue dari Antrian
                 antrian.dequeue();
                 break;
-            case 5: 
+            case 5: {
+                // Enqueue ke Antrian dengan prioritas
+                int prioritas;
+                cout<<"Masukkan prioritas: ";cin>>prioritas;
+                if (tail != NULL) {
+                    antrianPrioritas.enqueue(current->mobil, prioritas);
+                    cout << "Data berhasil dienqueue ke Antrian dengan prioritas." << endl;
+                } else {
+                    cout << "Tidak ada data untuk dienqueue ke Antrian dengan prioritas." << endl;
+                }
+                current = current->next;
+                isWithPriority = true;
+                break;
+            }
+            case 6:
+                // Dequeue dari Antrian dengan prioritas
+                antrianPrioritas.dequeue();
+                break;
+            case 7: 
           stack.tampilkanIsi();
                 break;            
-            case 6:
+            case 8:
                 // Lihat Isi Antrian
-                antrian.tampilkanIsi();
+                if (isWithPriority) {
+                    antrianPrioritas.tampilkanIsi();
+                }
+                else {
+                    antrian.tampilkanIsi();
+                }
                 break;
-            case 7:
+            case 9:
                 cout << "Keluar dari program." << endl;
                 break;
             default:
