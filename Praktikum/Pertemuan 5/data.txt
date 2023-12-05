@@ -160,5 +160,3 @@ Kewarganegaraan   : WNI
 Berlaku Hingga    : SEUMUR HIDUP
 Dibuat            : 17-10-2023
 ========================================================
-Provinsi          : PROVINSI JAWA TENGAH
-Kota/Kabupaten    : KOTA SURAKARTA

@@ -16,7 +16,6 @@ struct Data {
         int month;
         int year;
     } born;
-
     bool gender;
     string bloodType;
 
@@ -39,11 +38,53 @@ struct Data {
     } created;
 };
 
-struct Node{
+class Node{
+    public:
     Data data;
     Node* next;
     Node* prev;
+
+    Node(Data data, Node* next, Node* prev){
+        this->data = data;
+        this->next = next;
+        this->prev = prev;
+    }
+    Node(){
+        this->next = nullptr;
+        this->prev = nullptr;
+    }
+
+    bool isFull(){
+        return this->next != nullptr && this->prev != nullptr ? true : false;
+    }
+    bool isEmpty(){
+        return this->next == nullptr && this->prev == nullptr ? true : false;
+    }
+    void enqueue(Data data){
+        Node* newNode = new Node(data, nullptr, nullptr);
+        if(isEmpty()){
+            this->next = newNode;
+            this->prev = newNode;
+        } else {
+            this->prev->next = newNode;
+            newNode->prev = this->prev;
+            this->prev = newNode;
+        }
+    }
+    void dequeue(){
+        if(isEmpty()){
+            cout << "Linked list kosong" << endl;
+            return;
+        }
+        Node* temp = this->next;
+        this->next = this->next->next;
+        if(this->next != nullptr){
+            this->next->prev = nullptr;
+        }
+        delete temp;
+    } 
 };
+
 
 class KTP {
 private:
