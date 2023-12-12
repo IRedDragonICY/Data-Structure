@@ -20,7 +20,9 @@ public:
     PengembalianMobil(int nomorReservasi, string tanggalPengembalian, string waktuPengembalian, string lokasiPengembalian,
         int kilometerAwal, int kilometerAkhir, double bahanBakar, string kondisiMobil,
         double totalHargaSewa, double totalHargaKerusakan, string identifikasiPelanggan);
-
+    int getNomorReservasi() {
+        return nomorReservasi;
+    }
     void tampilkanInfoPengembalian();
     double jumlahKilometer();
     double hitungDenda();
@@ -108,8 +110,63 @@ struct Node {
 
     Node(PengembalianMobil mobil, int prioritas) : mobil(mobil), prioritas(prioritas), next(NULL), prev(NULL) {}
     Node() : mobil(), prioritas(0), next(NULL), prev(NULL) {}
+    // Node jika pake tree
+    Node* left;
+    Node* right;
+    Node* parent;
+    int height;
+    Node(PengembalianMobil mobil) : mobil(mobil), next(NULL), prev(NULL), left(NULL), right(NULL), parent(NULL), height(0) {}
 };
 
+
+class BST {
+private:
+    Node* root;
+    
+public:
+    BST() : root(NULL) {}
+
+    Node* getRoot() {
+        return this->root;
+    }
+
+    Node* createNode(PengembalianMobil mobil) {
+        Node* newNode = new Node(mobil);
+        return newNode;
+    }
+
+    Node* insertNode(Node* node, PengembalianMobil mobil) {
+        if (node == NULL) {
+            cout << "Data berhasil ditambahkan ke dalam tree." << endl;
+            node = createNode(mobil);
+        } else if (mobil.getNomorReservasi() < node->mobil.getNomorReservasi()) {
+            cout << "Data berhasil ditambahkan ke dalam tree bagian kiri." << endl;
+            node->left = insertNode(node->left, mobil);
+            if (node->left) node->left->parent = node;
+        } else if (mobil.getNomorReservasi() > node->mobil.getNomorReservasi()) {
+            cout << "Data berhasil ditambahkan ke dalam tree bagian kanan." << endl;
+            node->right = insertNode(node->right, mobil);
+            if (node->right) node->right->parent = node;
+        }
+        return node;
+    }
+
+
+    void insert(PengembalianMobil mobil) {
+        this->root = insertNode(this->root, mobil);
+    }
+    void display(Node* node) {
+        // menampilkan data dengan inorder
+        if (node == NULL) {
+            return;
+        }
+        display(node->left);
+        node->mobil.tampilkanInfoPengembalian();
+        display(node->right);
+    }
+};
+
+        
 class doublyPriorityQueue {
 public:
     Node* head;
@@ -355,6 +412,8 @@ int main() {
     Stack stack;
     Queue antrian;
     doublyPriorityQueue antrianPrioritas;
+    BST tree;
+
     int jumlahMobilDipinjam, jumlahMobilDikembalikan;
     double totalHargaSewa;
 
@@ -462,15 +521,8 @@ int main() {
         tail->mobil.tampilkanInfoPengembalian();
     }
 
-    // coba mencetak semua data yang ada di linked list
     Node* current = head;
-    // while (current != NULL) {
-    //     cout << "=============================" << endl;
-    //     cout << "Informasi Pengembalian Mobil" << endl;
-    //     cout << "=============================" << endl;
-    //     current->mobil.tampilkanInfoPengembalian();
-    //     current = current->next;
-    // }
+
 
     system("clear");
     bool isWithPriority = false;
@@ -483,9 +535,11 @@ int main() {
         cout << "4. Dequeue dari Antrian\n";
         cout << "5. Enqueue ke Antrian dengan prioritas\n";
         cout << "6. Dequeue dari Antrian dengan prioritas\n";
-        cout << "7. Lihat Isi Stack\n";
-        cout << "8. Lihat Isi Antrian\n";
-        cout << "9. Keluar\n";
+        cout << "7  Insert Tree\n";
+        cout << "8. Lihat Isi Stack\n";
+        cout << "9. Lihat Isi Antrian\n";
+        cout << "10. Menampilkan isi data dengan BST\n";
+        cout << "11. Keluar\n";
         cout << "Masukkan pilihan Anda: ";
         cin >> menuPilihan;
 
@@ -538,10 +592,16 @@ int main() {
                 // Dequeue dari Antrian dengan prioritas
                 antrianPrioritas.dequeue();
                 break;
-            case 7: 
-          stack.tampilkanIsi();
+            case 7:
+                // Insert Tree
+                tree.insert(current->mobil);
+                current = current->next;
+                break;
+    
+            case 8: 
+                stack.tampilkanIsi();
                 break;            
-            case 8:
+            case 9:
                 // Lihat Isi Antrian
                 if (isWithPriority) {
                     antrianPrioritas.tampilkanIsi();
@@ -550,13 +610,17 @@ int main() {
                     antrian.tampilkanIsi();
                 }
                 break;
-            case 9:
+            case 10:
+                // Menampilkan isi data dengan BST
+                tree.display(tree.getRoot());
+                break;
+            case 11:
                 cout << "Keluar dari program." << endl;
                 break;
             default:
                 cout << "Pilihan tidak valid. Silakan masukkan opsi yang benar." << endl;
         }
-    } while (menuPilihan != 7);
+    } while (menuPilihan != 11);
 
     return 0;
 }
