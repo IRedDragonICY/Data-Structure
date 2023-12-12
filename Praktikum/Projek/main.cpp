@@ -139,7 +139,7 @@ public:
         if (node == NULL) {
             cout << "Data berhasil ditambahkan ke dalam tree." << endl;
             node = createNode(mobil);
-        } else if (mobil.getNomorReservasi() < node->mobil.getNomorReservasi()) {
+        } else if (mobil.getNomorReservasi() <= node->mobil.getNomorReservasi()) {
             cout << "Data berhasil ditambahkan ke dalam tree bagian kiri." << endl;
             node->left = insertNode(node->left, mobil);
             if (node->left) node->left->parent = node;
