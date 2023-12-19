@@ -1,21 +1,21 @@
 #include <bits/stdc++.h>
 using namespace std;
- 
+
 class BST {
-    int data;
+    char data;
     BST *left, *right;
- 
+
 public:
-    BST() : data(0), left(NULL), right(NULL){}
-    BST(int value) : data(value), left(NULL), right(NULL){}
- 
-    BST* Insert(BST* root, int value){
+    BST() : data('\0'), left(NULL), right(NULL){}
+    BST(char value) : data(value), left(NULL), right(NULL){}
+
+    BST* Insert(BST* root, char value){
         if (!root) return new BST(value);
         if (value >= root->data) root->right = Insert(root->right, value);
         else if (value < root->data) root->left = Insert(root->left, value);
         return root;
     }
- 
+
     void Inorder(BST* root){
         if (!root) return;
         Inorder(root->left);
@@ -37,13 +37,12 @@ public:
         cout << root->data << " ";
     }
 };
- 
+
 int main(){
     BST b, *root = NULL;
-    root = b.Insert(root, 1);
-    b.Insert(root, 8); b.Insert(root, 4); b.Insert(root, 0);b.Insert(root, 1); b.Insert(root, 22);
-    cout << "Inorder: "; b.Inorder(root); cout << endl;
-    cout << "Postorder ";b.Postorder(root); cout << endl;
-    cout << "Preorder ";b.Preorder(root); cout << endl;
+    root = b.Insert(root, 'J'); b.Insert(root, 'R'); b.Insert(root, 'D'); b.Insert(root, 'G'); b.Insert(root, 'T'); b.Insert(root, 'E'); b.Insert(root, 'M'); b.Insert(root, 'H'); b.Insert(root, 'P'); b.Insert(root, 'A'); b.Insert(root, 'F'); b.Insert(root, 'Q');
+    cout << "Inorder   : "; b.Inorder(root); cout << endl;
+    cout << "Postorder : "; b.Postorder(root); cout << endl;
+    cout << "Preorder  : "; b.Preorder(root); cout << endl;
     return 0;
 }
